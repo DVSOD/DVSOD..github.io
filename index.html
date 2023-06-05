@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Saliency Revisited using RGBD Videos: A Unified Dataset and Benchmark">
+  <meta name="keywords" content="Saliency Detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DVSOD Benchmark</title>
+
+  <meta property="og:image" content="https://jiwei0921.github.io/MVSS/resources/preview.jpg"/>
+	<meta property="og:title" content="Saliency Revisited using RGBD Videos: A Unified Dataset and Benchmark" />
+	<meta property="og:description" content="DVSOD Benchmark" />
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFNFH9CKNX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-VFNFH9CKNX');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./resources/carousel-horse.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <img src='resources/logo.png' height="100%">
+      </div>
+      <br>
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title" style="font-size: 2.2rem;"> Saliency Revisited using RGBD Videos: A Unified Dataset and Benchmark</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jiwei0921.github.io/">Wei Ji</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="mailto:jingjin1@ualberta.ca">Jingjing Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=QGrtFboAAAAJ&hl=zh-CN/">Cheng Bian</a><sup>2</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://www.zongweiz.com/">Zongwei Zhou</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/smilejames/">Jiaying Zhao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=9IRFiEQAAAAJ&hl=en">Li Cheng</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Alberta</span>,
+            <span class="author-block"><sup>2</sup>ByteDance</span>,
+            <span class="author-block"><sup>3</sup>Johns Hopkins University</span>
+          </div>
+
+          <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark">
+              
+              <span>CVPR2023</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero intro">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="intro" autoplay muted loop playsinline height="100%">
+        <source src="resources/mvss.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle">
+        Real-world illustrations of Multispectral Video Semantic Segmentation in daytime and nighttime.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Robust and reliable semantic segmentation in complex scenes is crucial for many real-life applications such as autonomous safe driving and nighttime rescue. In most approaches, it is typical to make use of RGB images as input. They however work well only in preferred weather conditions; when facing adverse conditions such as rainy, overexposure, or low-light, they often fail to deliver satisfactory results. This has led to the recent investigation into multispectral semantic segmentation, where RGB and thermal infrared (RGBT) images are both utilized as input. This gives rise to significantly more robust segmentation of image objects in complex scenes and under adverse conditions. Nevertheless, the present focus in single RGBT image input restricts existing methods from well addressing dynamic real-world scenes.
+          </p>
+          <p>
+            Motivated by the above observations, in this paper, we set out to address a relatively new task of semantic segmentation of multispectral video input, which we refer to as Multispectral Video Semantic Segmentation, or MVSS in short. An in-house MVSeg dataset is thus curated, consisting of 738 calibrated RGB and thermal videos, accompanied by 3,545 fine-grained pixel-level semantic annotaions of 26 categories. Our dataset contains a wide range of challenging urban scenes in both daytime and nighttime. Moreover, we propose an effective MVSS baseline, dubbed MVNet, which is to our knowledge the first model to jointly learn semantic representations from multispectral and temporal contexts. Comprehensive experiments are conducted using various semantic segmentation models on the MVSeg dataset. Empirically, the engagement of multispectral video input is shown to lead to significant improvement in semantic segmentation; the effectiveness of our MVNet baseline has also been verified.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Video Demo</h2>
+
+        <h2 class="title is-5">Visual Results</h2>
+        <div class="content has-text-justified">
+          <p>
+              In the following video demo, we provide intuitive visual results for different scenarios, day and night, in the MVSeg dataset. We also highlighted the details with red boxes. Obviously, the results from our MVNet model are more complete compared to RGB-based DeeplabV3+. This attributes to the superiority of our method in engaging the advantages of complementary multispectral and temporal contexts.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="horse-real" autoplay controls muted preload loop playsinline style="max-width: 92%; display: block; margin: auto;">
+            <source src="resources/results.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <br>
+
+        <h2 class="title is-5">Method Quickview</h2>
+        <div class="content has-text-justified">
+          <p>
+            The following animation presents an overview of the proposed MVNet. Starting from the input multispectral video, its pipeline consists of four parts: (a) feature extraction to obtain the multispectral video features; (b) an MVFuse module to furnish the query features with the rich semantic cues of memory frames; (c) an MVRegulator loss to regularize the multispectral video embedding space; and (d) a cascaded decoder to generate the final segmentation mask.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="horse-real" autoplay controls muted preload loop playsinline style="max-width: 95%; display: block; margin: auto;">
+            <source src="resources/method.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <br>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Our BibTeX</h2>
+    <pre><code>@InProceedings{ji2023mvss,
+      title     = {Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline},
+      author    = {Ji, Wei and Li, Jingjing and Bian, Cheng and Zhou, Zongwei and Zhao, Jiaying and Yuille, Alan L. and Cheng, Li},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month     = {June},
+      year      = {2023},
+      pages     = {1094-1104}
+}</code></pre>
+  </div>
+</section>
+
+<section class="section" id="Announcement">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Announcement</h2>
+    <p>
+      Our code and dataset are currently undergoing routine internal approval processes due to patent and privacy considerations. They will be publicly available in mid-July. If you have any further questions, please email us at <font color="blue">wji3@ualberta.ca</font>.
+      </p>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This webpage template is adapted from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
