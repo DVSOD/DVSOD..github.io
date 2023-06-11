@@ -99,7 +99,9 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle">
+          <div style="text-align: center;">
         Illustration of the advantages of employing RGBD videos for detecting salient objects in a scene.
+          </div>
       </h2>
     </div>
   </div>
@@ -116,6 +118,7 @@
           <p>
               Salient object detection (SOD) aims to identify standout elements in a scene, with recent advancements primarily focused on integrating depth data (RGB-D) or temporal data from videos to enhance SOD in complex scenes. However, the unison of two types of crucial information remains largely underexplored due to data constraints. We address this gap by introducing the DViSal dataset, fueling further research in the emerging field of RGB-D video salient object detection (DVSOD). Our dataset features 237 diverse RGB-D videos alongside comprehensive annotations, including object and instance-level markings, as well as bounding boxes and scribbles. These resources enable a broad scope for potential research directions. We also conduct benchmarking experiments using various SOD models, affirming the efficacy of multimodal video input for salient object detection. Lastly, we highlight some intriguing findings and promising future research avenues. To foster growth in this field, our dataset and benchmark results are publicly accessible.
               <br>
+              <br>
               <strong> The website is currently undergoing construction. In the meantime, you can directly access our data and code by clicking the black button above.  </strong>
 	        </p>
         </div>
@@ -125,7 +128,7 @@
   </div>
 </section>
 
- <!--/ 
+ 
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -133,24 +136,27 @@
       <div class="column is-full-width has-text-centered">
         <h2 class="title is-3">Video Demo</h2>
 
-        <h2 class="title is-5">Visual Results</h2>
+        <h2 class="title is-5">DViSal Examples</h2>
         <div class="content has-text-justified">
           <p>
-              In the following video demo, we provide intuitive visual results for different scenarios, day and night, in the MVSeg dataset. We also highlighted the details with red boxes. Obviously, the results from our MVNet model are more complete compared to RGB-based DeeplabV3+. This attributes to the superiority of our method in engaging the advantages of complementary multispectral and temporal contexts.
+            <div style="text-align: center;">
+            In the following video demo, we will showcase several examples from the DViSal dataset.
+            </div>
           </p>
         </div>
         <div class="content has-text-centered">
           <video id="horse-real" autoplay controls muted preload loop playsinline style="max-width: 92%; display: block; margin: auto;">
-            <source src="resources/results.mp4"
+            <source src="resources/examples.mp4"
                     type="video/mp4">
           </video>
         </div>
         <br>
 
-        <h2 class="title is-5">Method Quickview</h2>
+        <!--
+        <h2 class="title is-5">Visual Results</h2>
         <div class="content has-text-justified">
           <p>
-            The following animation presents an overview of the proposed MVNet. Starting from the input multispectral video, its pipeline consists of four parts: (a) feature extraction to obtain the multispectral video features; (b) an MVFuse module to furnish the query features with the rich semantic cues of memory frames; (c) an MVRegulator loss to regularize the multispectral video embedding space; and (d) a cascaded decoder to generate the final segmentation mask.
+              In the following video demo, we provide intuitive visual results for different scenarios, day and night, in the MVSeg dataset. We also highlighted the details with red boxes. Obviously, the results from our MVNet model are more complete compared to RGB-based DeeplabV3+. This attributes to the superiority of our method in engaging the advantages of complementary multispectral and temporal contexts.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -160,6 +166,7 @@
           </video>
         </div>
         <br>
+        -->
 
       </div>
     </div>
@@ -168,29 +175,6 @@
 </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Our BibTeX</h2>
-    <pre><code>@InProceedings{ji2023mvss,
-      title     = {Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline},
-      author    = {Ji, Wei and Li, Jingjing and Bian, Cheng and Zhou, Zongwei and Zhao, Jiaying and Yuille, Alan L. and Cheng, Li},
-      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-      month     = {June},
-      year      = {2023},
-      pages     = {1094-1104}
-}</code></pre>
-  </div>
-</section>
-
-<section class="section" id="Announcement">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Announcement</h2>
-    <p>
-      Our code and dataset are currently undergoing routine internal approval processes due to patent and privacy considerations. They will be publicly available in mid-July. If you have any further questions, please email us at <font color="blue">wji3@ualberta.ca</font>.
-      </p>
-  </div>
-</section>
--->
 
 
 <footer class="footer">
