@@ -1,6 +1,6 @@
 # DVSOD.github.io
 
-This repository for the [DVSOD benchmark website](https://dvsod.github.io/), is adapted from <a rel="license" href="https://nerfies.github.io">Nerfies</a>.
+This repository for the [DVSOD benchmark website](https://dvsod.github.io/), is adapted from <a rel="license" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
 
 The associated projects can be accessed in:
 
