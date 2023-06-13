@@ -9,3 +9,5 @@ The associated projects can be accessed in:
 3.  [DVSOD baseline code](https://github.com/DVSOD/DVSOD-Baseline)
 
 The authors will be responsible for the ongoing maintenance of this project.
+
+If you have any questions, feel free to post your questions in the *GitHub Issues* module.
