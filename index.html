@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DVSOD: RGB-D Video Salient Object Detection">
+  <meta name="keywords" content="Saliency Detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DVSOD Benchmark</title>
+
+	<meta property="og:title" content="DVSOD: RGB-D Video Salient Object Detection" />
+	<meta property="og:description" content="DVSOD Benchmark" />
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFNFH9CKNX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-VFNFH9CKNX');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./resources/carousel-horse.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+
+      <br>
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title" style="font-size: 2.2rem;"> DVSOD: RGB-D Video Salient Object Detection</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+               <strong> Jingjing Li<sup>1</sup>, Wei Ji<sup>1,2</sup>, Size Wang<sup>1</sup>, Wenbo Li<sup>1</sup>, Li Cheng<sup>1</sup>, </strong> <br>
+               <sup>1</sup>University of Alberta, Canada <br>
+               <sup>2</sup>Samsung Research America AI Center, USA <br>
+               <strong>NeurIPS 2023</strong>
+            </span>
+          </div>
+          
+          <span class="link-block">
+            <a href="https://github.com/DVSOD/DVSOD-DViSal"
+               class="external-link button is-normal is-rounded is-dark">
+              <span>Dataset</span>
+            </a>
+          </span>
+
+          <span class="link-block">
+            <a href="https://github.com/DVSOD/DVSOD-Baseline"
+               class="external-link button is-normal is-rounded is-dark">
+              <span>Code</span>
+            </a>
+          </span>
+
+          <span class="link-block">
+            <a href="https://github.com/DVSOD/DVSOD-Evaluation"
+               class="external-link button is-normal is-rounded is-dark">
+              <span>Evaluation</span>
+            </a>
+          </span>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero intro">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="intro" autoplay muted loop playsinline height="100%">
+        <source src="resources/intro.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle">
+          <div style="text-align: center;">
+        Illustration of the advantages of employing RGBD videos for detecting salient objects in a scene.
+          </div>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              Salient object detection (SOD) aims to identify standout elements in a scene, with recent advancements primarily focused on integrating depth data (RGB-D) or temporal data from videos to enhance SOD in complex scenes. However, the unison of two types of crucial information remains largely underexplored due to data constraints. We address this gap by introducing the DViSal dataset, fueling further research in the emerging field of RGB-D video salient object detection (<strong>DVSOD</strong>). Our dataset features 237 diverse RGB-D videos alongside comprehensive annotations, including object and instance-level markings, as well as bounding boxes and scribbles. These resources enable a broad scope for potential research directions. We also conduct benchmarking experiments using various SOD models, affirming the efficacy of multimodal video input for salient object detection. Lastly, we highlight some intriguing findings and promising future research avenues. To foster growth in this field, our dataset and benchmark results are publicly accessible.
+              <!--/<br>
+              <br>
+              <strong> The website will be continuously maintained and updated. In the meantime, you can directly access our data and code by clicking the black button above.  </strong>
+              -->
+            </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+ 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Video Demo</h2>
+
+        <h2 class="title is-5">DViSal Examples</h2>
+        <div class="content has-text-justified">
+          <p>
+            <div style="text-align: center;">
+            In the following video demo, we showcase some examples from the DViSal dataset.
+            </div>
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="horse-real" autoplay controls muted preload loop playsinline style="max-width: 92%; display: block; margin: auto;">
+            <source src="resources/examples.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <br>
+
+        
+        <h2 class="title is-5">Visual Examples</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the following video demo, we present some intuitive examples that illustrate the effectiveness of incorporating different input modalities in various scenarios. It is evident that the results obtained from RGBD videos are significantly more captivating when compared to using RGB or RGBD alone. This attributes to the superiority of integrating the advantages of complementary multimodal RGBD information and temporal contexts.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="horse-real" autoplay controls muted preload loop playsinline style="max-width: 95%; display: block; margin: auto;">
+            <source src="resources/res.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <br>
+        
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Announcement</h2>
+    <p>
+      Our dataset and code are available now to research community. If you have questions, feel free to email us at <font color="blue">wji3@ualberta.ca</font>.
+      If you are interested in our work, you are welcome to cite our paper using the BibTeX provided below.
+    </p>
+    <pre><code>@InProceedings{li2023dvsod,
+title={DVSOD: RGB-D Video Salient Object Detection},
+author={Li, Jingjing and Ji, Wei and Wang, Size and Li, Wenbo and Cheng, Li},
+booktitle={Advances in Neural Information Processing Systems},
+year={2023},
+month={December}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+This project website is adapted from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
